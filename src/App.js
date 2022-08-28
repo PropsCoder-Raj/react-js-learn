@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import './appStyle.css';
+import styles from './appStyle.module.css'
+import { InlineStyle } from './components/InlineStyle';
+// import { StyleSheet } from './components/StyleSheet';
+// import { ListComponent } from './components/ListComponent';
+// import { UserGreeting } from './components/UserGreeting';
+// import { ParentComponent } from './components/ParentComponent';
+// import { ClickHandler } from './components/ClickHandler';
+// import { Greet } from "./components/Greet";
+// import { Message } from "./components/Message";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InlineStyle />
+      <h1 className='error'>Error</h1>
+      <h1 className={styles.success}>Success</h1>
     </div>
   );
 }
